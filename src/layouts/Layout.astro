@@ -108,6 +108,18 @@ const socialImageURL = new URL(
     <ViewTransitions />
 
     <script is:inline src="/toggle-theme.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-56G2Y10CHT"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-56G2Y10CHT");
+    </script>
   </head>
   <body>
     <slot />
